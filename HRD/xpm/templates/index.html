@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        {% block title %}
+        {% endblock %}
+        <title>HRD</title>
+        <meta charset="utf-8">
+    </head>
+
+    {% block body %}
+        <div class="main_menu">
+            <span class="btn btn-danger"><a  href="{% url 'websitehome' %}">website</a></span>
+            <span class="btn btn-danger"><a href="{% url 'dashboard' %}">Dashboard</a></span>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <h1 style="color:blue;">This site under construction...</h1>
+        </div>
+
+        <footer>
+            <p>Contact us: +91 7011101001</p>
+        </footer>
+    {% endblock %}
+
+</html>
